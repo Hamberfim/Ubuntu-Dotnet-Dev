@@ -17,6 +17,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "prov-dotnet-config.sh"
   config.vm.network :forwarded_port, guest: 1433, host: 4567
 
+  # MS-SQL requires 2g of memory
+  vb.memory = "2048"
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
