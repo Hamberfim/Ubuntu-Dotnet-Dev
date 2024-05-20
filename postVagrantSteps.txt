@@ -1,8 +1,19 @@
-## Post install configuration required ##
-#  vagrant ssh
-#  sudo /opt/mssql/bin/mssql-conf setup
-#  Lic selection 2
-#  fill in the password
-#  systemctl status mssql-server --no-pager
-#  To connect remotely, you might need to open
-#  the SQL Server TCP port (default 1433) on the firewall
+## Post install configuration required - TODO: probably better handled by Ansible ##
+#       vagrant ssh
+#       sudo /opt/mssql/bin/mssql-conf setup
+#           --Lic selection 2
+#       fill in the password
+## Check MS-SQL service
+#       systemctl status mssql-server --no-pager
+## Install ms-sql tools:
+#       sudo apt install -y mssql-tools18 unixodbc-dev
+## Add to the env path in bash profile and bash:
+#       echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bash_profile
+#       echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bashrc
+#       source ~/.bashrc
+#
+# ############# NOTE #############
+# #  To connect remotely, you might need to open
+# #  the SQL Server TCP port (default 1433) on the firewall
+# #  either on the vm or 
+# #  via the vagrant config i.e., config.vm.network :forwarded_port, guest: 1433, host: 4567
