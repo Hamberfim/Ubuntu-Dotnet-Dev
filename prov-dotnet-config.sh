@@ -29,7 +29,7 @@ apt-get update
 
 ## Install .Net SDK
 echo "######### installing .Net 8 sdk"
-apt-get install dotnet-sdk-8.0
+apt-get install -y dotnet-sdk-8.0
 
 # ## INSTALL MSSQL
 # # download and register the MSSQL Server repository for Ubuntu
