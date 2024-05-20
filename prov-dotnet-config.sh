@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+locale-gen en_US.UTF-8
+dpkg-reconfigure locales
+
 # Set DEBIAN_FRONTEND to noninteractive
 export DEBIAN_FRONTEND=noninteractive
 
@@ -31,38 +37,38 @@ sudo apt-get update
 echo "######### installing .Net 8 sdk"
 sudo apt-get install dotnet-sdk-8.0
 
-## INSTALL MSSQL
-# download and register the MSSQL Server repository for Ubuntu
-echo "######### register mssql repo"
-curl -fsSL https://packages.microsoft.com/config/ubuntu/22.04/mssql-server-2022.list | sudo tee /etc/apt/sources.list.d/mssql-server-2022.list
+# ## INSTALL MSSQL
+# # download and register the MSSQL Server repository for Ubuntu
+# echo "######### register mssql repo"
+# curl -fsSL https://packages.microsoft.com/config/ubuntu/22.04/mssql-server-2022.list | sudo tee /etc/apt/sources.list.d/mssql-server-2022.list
 
-# Update packages list
-echo "######### updating repo packages"
-sudo apt-get update
+# # Update packages list
+# echo "######### updating repo packages"
+# sudo apt-get update
 
-# install MSSQL
-echo "######### installing ms-sql"
-sudo apt-get install -y mssql-server
+# # install MSSQL
+# echo "######### installing ms-sql"
+# sudo apt-get install -y mssql-server
 
-# Install MSSQL Tools
-echo "######### installing ms-sql tools"
-sudo apt-get install -y mssql-tools18 unixodbc-dev
+# # Install MSSQL Tools
+# echo "######### installing ms-sql tools"
+# sudo apt-get install -y mssql-tools18 unixodbc-dev
 
-# Add to the env path in bash - output $PATH without expansion
-echo "exporting env paths"
-echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bash_profile
+# # Add to the env path in bash - output $PATH without expansion
+# echo "exporting env paths"
+# echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bash_profile
 
-# for interactive non-login session - output $PATH without expansion
-echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bashrc
-# shellcheck source=/dev/null
-source ~/.bashrc
+# # for interactive non-login session - output $PATH without expansion
+# echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bashrc
+# # shellcheck source=/dev/null
+# source ~/.bashrc
 
-### Post install configuration required ###
-#  vagrant ssh
-#  sudo /opt/mssql/bin/mssql-conf setup
-#  Lic selection 2
-#  fill in the password
-#  systemctl status mssql-server --no-pager
-############# NOTE #############
-#  To connect remotely, you might need to open
-#  the SQL Server TCP port (default 1433) on the firewall
+# ### Post install configuration required ###
+# #  vagrant ssh
+# #  sudo /opt/mssql/bin/mssql-conf setup
+# #  Lic selection 2
+# #  fill in the password
+# #  systemctl status mssql-server --no-pager
+# ############# NOTE #############
+# #  To connect remotely, you might need to open
+# #  the SQL Server TCP port (default 1433) on the firewall

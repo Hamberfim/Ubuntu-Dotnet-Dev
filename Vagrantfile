@@ -15,7 +15,6 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/jammy64"
   config.vm.box_url = "https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64-vagrant.box"
   config.vm.provision :shell, path: "prov-dotnet-config.sh"
-  config.vm.network :forwarded_port, guest: 1433, host: 1433
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
