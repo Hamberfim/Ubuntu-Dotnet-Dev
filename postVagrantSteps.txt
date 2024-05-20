@@ -1,0 +1,8 @@
+## Post install configuration required ##
+#  vagrant ssh
+#  sudo /opt/mssql/bin/mssql-conf setup
+#  Lic selection 2
+#  fill in the password
+#  systemctl status mssql-server --no-pager
+#  To connect remotely, you might need to open
+#  the SQL Server TCP port (default 1433) on the firewall
