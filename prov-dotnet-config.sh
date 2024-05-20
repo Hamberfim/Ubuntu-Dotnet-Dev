@@ -9,7 +9,7 @@ apt-get update # get system up to date
 
 # Get needed packages are installed
 echo "######### installing needed packages"
-apt-get install git wget curl vim nano neovim openssh-client openssh-server build-essential
+apt-get install -y git wget curl vim nano neovim openssh-client openssh-server build-essential
 
 # Download Microsoft signing key and repository
 echo "######### getting MS key and repo"
