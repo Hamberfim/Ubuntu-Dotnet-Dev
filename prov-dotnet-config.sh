@@ -27,13 +27,24 @@ curl -fsSL https://packages.microsoft.com/config/ubuntu/22.04/mssql-server-2022.
 sudo apt update
 
 # install MSSQL
-sudo apt-get install -y mssql-server
+sudo apt install -y mssql-server
 
-## Post install configuration required ##
+# Install MSSQL Tools
+sudo apt install mssql-tools18 unixodbc-dev
+
+# Add to the env path in bash
+echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bash_profile
+
+# for interactive non-login session
+echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bashrc
+source ~/.bashrc
+
+### Post install configuration required ###
 #  vagrant ssh
 #  sudo /opt/mssql/bin/mssql-conf setup
 #  Lic selection 2
 #  fill in the password
 #  systemctl status mssql-server --no-pager
+############# NOTE #############
 #  To connect remotely, you might need to open
 #  the SQL Server TCP port (default 1433) on the firewall
