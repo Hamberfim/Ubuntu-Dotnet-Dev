@@ -8,12 +8,12 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 echo "######### updating repo packages"
-# adding sudo for Explicitness
-sudo apt-get update # get system up to date
+
+apt-get update # get system up to date
 
 # Get needed packages are installed
 echo "######### installing needed packages"
-sudo apt-get install git wget curl vim nano neovim openssh-client openssh-server build-essential
+apt-get install git wget curl vim nano neovim openssh-client openssh-server build-essential
 
 # Download Microsoft signing key and repository
 echo "######### getting MS key and repo"
@@ -21,7 +21,7 @@ wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.
 
 # Install Microsoft signing key and repository
 echo "######### installing repo"
-sudo dpkg -i packages-microsoft-prod.deb
+dpkg -i packages-microsoft-prod.deb
 
 # Clean up
 echo "######### clean up"
@@ -29,11 +29,11 @@ rm packages-microsoft-prod.deb
 
 # Update packages list
 echo "######### updating repo packages"
-sudo apt-get update
+apt-get update
 
 ## Install .Net SDK
 echo "######### installing .Net 8 sdk"
-sudo apt-get install dotnet-sdk-8.0
+apt-get install dotnet-sdk-8.0
 
 # ## INSTALL MSSQL
 # # download and register the MSSQL Server repository for Ubuntu
