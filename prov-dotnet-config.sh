@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
+# Set DEBIAN_FRONTEND to noninteractive
+export DEBIAN_FRONTEND=noninteractive
+
 export LANGUAGE=en_US.UTF-8
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 locale-gen en_US.UTF-8
 dpkg-reconfigure locales
-
-# Set DEBIAN_FRONTEND to noninteractive
-export DEBIAN_FRONTEND=noninteractive
 
 echo "######### updating repo packages"
 # adding sudo for Explicitness
