@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/vagrant/project/testConsole/HelloTest/HelloTest.csproj": {}
+    "/home/adhamlin/Documents/GitHub/Ubuntu-Dotnet-Dev/project/testConsole/HelloTest/HelloTest.csproj": {}
   },
   "projects": {
-    "/home/vagrant/project/testConsole/HelloTest/HelloTest.csproj": {
+    "/home/adhamlin/Documents/GitHub/Ubuntu-Dotnet-Dev/project/testConsole/HelloTest/HelloTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/vagrant/project/testConsole/HelloTest/HelloTest.csproj",
+        "projectUniqueName": "/home/adhamlin/Documents/GitHub/Ubuntu-Dotnet-Dev/project/testConsole/HelloTest/HelloTest.csproj",
         "projectName": "HelloTest",
-        "projectPath": "/home/vagrant/project/testConsole/HelloTest/HelloTest.csproj",
-        "packagesPath": "/home/vagrant/.nuget/packages/",
-        "outputPath": "/home/vagrant/project/testConsole/HelloTest/obj/",
+        "projectPath": "/home/adhamlin/Documents/GitHub/Ubuntu-Dotnet-Dev/project/testConsole/HelloTest/HelloTest.csproj",
+        "packagesPath": "/home/adhamlin/.nuget/packages/",
+        "outputPath": "/home/adhamlin/Documents/GitHub/Ubuntu-Dotnet-Dev/project/testConsole/HelloTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/vagrant/.nuget/NuGet/NuGet.Config"
+          "/home/adhamlin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
