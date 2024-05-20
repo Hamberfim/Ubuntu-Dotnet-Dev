@@ -31,18 +31,18 @@ apt-get update
 echo "######### installing .Net 8 sdk"
 apt-get install -y dotnet-sdk-8.0
 
-# ## INSTALL MSSQL
-# # download and register the MSSQL Server repository for Ubuntu
-# echo "######### register mssql repo"
-# curl -fsSL https://packages.microsoft.com/config/ubuntu/22.04/mssql-server-2022.list | sudo tee /etc/apt/sources.list.d/mssql-server-2022.list
+## INSTALL MSSQL
+# download and register the MSSQL Server repository for Ubuntu
+echo "######### register mssql repo"
+curl -fsSL https://packages.microsoft.com/config/ubuntu/22.04/mssql-server-2022.list | sudo tee /etc/apt/sources.list.d/mssql-server-2022.list
 
-# # Update packages list
-# echo "######### updating repo packages"
-# sudo apt-get update
+# Update packages list
+echo "######### updating repo packages"
+sudo apt-get update
 
-# # install MSSQL
-# echo "######### installing ms-sql"
-# sudo apt-get install -y mssql-server
+# install MSSQL
+echo "######### installing ms-sql"
+sudo apt-get install -y mssql-server
 
 # # Install MSSQL Tools
 # echo "######### installing ms-sql tools"
@@ -66,3 +66,5 @@ apt-get install -y dotnet-sdk-8.0
 # ############# NOTE #############
 # #  To connect remotely, you might need to open
 # #  the SQL Server TCP port (default 1433) on the firewall
+
+echo "finished installations"
