@@ -17,6 +17,9 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, path: "prov-dotnet-config.sh"
   config.vm.network :forwarded_port, guest: 1433, host: 4567
 
+  # shared sync folder  - host path, guest path
+  config.vm.synced_folder "./project", "/home/vagrant/project"
+
   # MS-SQL requires 2g of memory
   config.vm.provider "virtualbox" do |vb|
     vb.memory = "2048"
