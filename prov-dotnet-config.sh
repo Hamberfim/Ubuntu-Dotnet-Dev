@@ -16,11 +16,11 @@ echo "######### getting MS key and repo"
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 
 # Install Microsoft signing key and repository
-echo "######### installing repo"
+echo "######### installing MS repo"
 dpkg -i packages-microsoft-prod.deb
 
 # Clean up
-echo "######### clean up"
+echo "######### clean up MS pack deb"
 rm packages-microsoft-prod.deb
 
 # Update packages list
