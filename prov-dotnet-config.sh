@@ -32,11 +32,12 @@ sudo apt install -y mssql-server
 # Install MSSQL Tools
 sudo apt install mssql-tools18 unixodbc-dev
 
-# Add to the env path in bash
+# Add to the env path in bash - output $PATH without expansion
 echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bash_profile
 
-# for interactive non-login session
+# for interactive non-login session - output $PATH without expansion
 echo 'export PATH="$PATH:/opt/mssql-tools18/bin"' >>~/.bashrc
+# shellcheck source=/dev/null
 source ~/.bashrc
 
 ### Post install configuration required ###
