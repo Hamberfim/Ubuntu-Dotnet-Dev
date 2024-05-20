@@ -3,10 +3,6 @@
 # Set DEBIAN_FRONTEND to noninteractive
 export DEBIAN_FRONTEND=noninteractive
 
-export LANGUAGE=en_US.UTF-8
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
-
 echo "######### updating repo packages"
 
 apt-get update # get system up to date
