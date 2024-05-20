@@ -1,0 +1,14 @@
+/home/vagrant/project/testConsole/HelloTest/bin/Debug/net8.0/HelloTest
+/home/vagrant/project/testConsole/HelloTest/bin/Debug/net8.0/HelloTest.deps.json
+/home/vagrant/project/testConsole/HelloTest/bin/Debug/net8.0/HelloTest.runtimeconfig.json
+/home/vagrant/project/testConsole/HelloTest/bin/Debug/net8.0/HelloTest.dll
+/home/vagrant/project/testConsole/HelloTest/bin/Debug/net8.0/HelloTest.pdb
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/HelloTest.GeneratedMSBuildEditorConfig.editorconfig
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/HelloTest.AssemblyInfoInputs.cache
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/HelloTest.AssemblyInfo.cs
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/HelloTest.csproj.CoreCompileInputs.cache
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/HelloTest.dll
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/refint/HelloTest.dll
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/HelloTest.pdb
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/HelloTest.genruntimeconfig.cache
+/home/vagrant/project/testConsole/HelloTest/obj/Debug/net8.0/ref/HelloTest.dll
