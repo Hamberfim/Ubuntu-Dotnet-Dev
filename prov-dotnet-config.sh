@@ -9,7 +9,7 @@ apt-get update # get system up to date
 
 # Get needed packages are installed
 echo "######### installing needed packages"
-apt-get install -y git wget curl vim nano neovim openssh-client openssh-server build-essential gpg
+apt-get install -y git wget curl vim nano neovim openssh-client openssh-server build-essential
 
 # Download Microsoft signing key and repository
 echo "######### getting MS key and repo"
@@ -44,7 +44,7 @@ sudo apt-get update
 echo "######### installing ms-sql"
 sudo apt-get install -y mssql-server
 
-# # Install VS Code
+# # Test Install VS Code
 # echo "######### installing VS Code"
 # wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >packages.microsoft.gpg
 # sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg

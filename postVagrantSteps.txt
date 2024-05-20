@@ -14,7 +14,18 @@
 #       source ~/.bashrc
 #
 # ############# NOTE #############
-# #  To connect remotely, you might need to open
+# #  To connect remotely to MS-SQL, you might need to open
 # #  the SQL Server TCP port (default 1433) on the firewall
 # #  either on the vm or 
 # #  via the vagrant config i.e., config.vm.network :forwarded_port, guest: 1433, host: 4567
+#
+# ############# Remote setup for VS Code #############
+#    Run vagrant ssh-config > some-file.txt. 
+#    This will generate a file with the configuration to run using SSH
+#    open the command palette, and type 
+#           Remote-SSH: Open Configuration File.... 
+#           Select the SSH configuration file you use (or create a new one), 
+#           and paste the content of some-file.txt into it
+#   In the command palette, 
+#           type Remote-SSH: Connect to Host... 
+#   and select the host you just added
