@@ -13,7 +13,7 @@ sudo apt-get install git wget curl vim nano neovim openssh-client openssh-server
 
 # Download Microsoft signing key and repository
 echo "######### getting MS key and repo"
-sudo wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb
 
 # Install Microsoft signing key and repository
 echo "######### installing repo"
@@ -21,7 +21,7 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 # Clean up
 echo "######### clean up"
-sudo rm packages-microsoft-prod.deb
+rm packages-microsoft-prod.deb
 
 # Update packages list
 echo "######### updating repo packages"
